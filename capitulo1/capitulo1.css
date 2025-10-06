@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+p{
+  font-size: large;
+  font-family: 'Uncial Antiqua', cursive;
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+#color{
+  /* color: rgb(81, 105, 81) ; */
+  color:#516951;
+  width: 30px;
+  /* background-color: rgb(81, 105, 81); */
+  background-color:#516951;
+  padding-top: 5px ;
+}
+#titulo{
+  text-align: center;
+   /* color: beige; */
+  color:#F5F5DC;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+body{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: url(../imagenes/Fondouno.jpg) no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+#sueño{/* color: violet; */color:#EE82EE;}
+h1{/* color: beige; */ color:#F5F5DC; text-align: center;}
+h6{/* color: rgb(2, 68, 80); */color:#024450;}
+#pruebas{width: 230px;}
+#croquis{width: 230px;}
+#historia{color:#000;}
+#carlos{/* color:rgb(0, 0, 0); */color:#000;}
+#yare{/*  color:rgb(65, 15, 182) ;  */color:#410FB6;}
+#rosario{/* color: rgb(180, 152, 92); */color:#B4985C;}
+#pedro{/*  color: rgb(235, 93, 50); */color: #EB5D32;}
+#chelsy{/*color:purple ;*/color:#800080;}
+#michael{/*color: rgb(165, 104, 34);*/color: #A56822;}
+#jesus{color:#CDE333;}
+#ronaldo{color:#85247e;}
+#luz{color:#903F32;}
+#suelen{/*  color:rgb(255, 0, 212) ; */color:#FF00D4;}
+#israel{color:#781943;}
