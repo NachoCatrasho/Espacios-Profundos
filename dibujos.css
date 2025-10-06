@@ -115,6 +115,7 @@ details:hover {
   text-decoration: none;
   color: #ffcf5c;
   font-size: 1.2em;
+
 } */
 
 details[open] .descripcion{
