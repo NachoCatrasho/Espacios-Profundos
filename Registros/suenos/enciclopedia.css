@@ -1,0 +1,14 @@
+body{
+  background-color: gray;
+  font-family: " Gill Sans Extrabold" , helvetica, sans-serif;
+}
+
+p{
+  font-size: 20px;
+}
+
+div{
+  padding: opx;
+  width: 60px;
+  border: 1px solid #000 ;
+}
