@@ -1,0 +1,47 @@
+¡Hello World!
+
+git init																// Iniciar un repositorio.
+
+git status																// revisar el estado del repositorio.
+
+git log																	// muestra el historial de commits realizado.
+git log --oneline														// muestra el historial de commits en una sola linea.
+git log -para															// muestra los cambios que introdujo el commit
+
+
+git config user.name													// visualizar el nombre del usuario.
+git config user.name "nombre"											// cambiar o nombrar al usuario.
+git config --global user.name											// Visualizar el nombre del usuario a nivel	 global.
+git config --goblal user.name "nombre"									// Nombrar el usuaro a nivel global.
+git config user.emal													// visualizar el email del usuario.
+git config user.email "email"											// Nombrar el email del usuario.
+git config --global user.email											// visualizar el nombre del usuario a nivel global.
+git config --golabl user.email "nombre"									// nombrar o añadir el nombre del usuario a nivel global.
+git config --global core.editor "code --wait"							// asocia el editor de texto VS code como predeterminado o default.
+
+git rm --cached archivo.txt												// quitar o remover el archivo o carpeta añadido para no incluirlo en el commit.
+
+git commit -m "mensaje"													// crea un commit y añade el mensaje desde la terminal.
+git commit 																// abre un documento en el programa por defecto asociado a git para registrar el mensaje asociado al commit.
+git commit --amend														// modificar un commit ya realizado (se recomienda usarlo en un repositorio local).
+
+git add archivo.txt														// añade un archivo a la zona de espera para implementarlo en el commit.
+git add .																// añade todos los archivos a la zona de espera para implementarlo en el commit.
+
+git reset --soft HEAD~1													// deshacer el último commit sin modificar el contenido de los archivos en el repositorio local.
+git reset --hard HEAD~1													// deshacer el último commit modificando el contenido de los archivos en el repositorio local.
+
+git branch																// te permite visualizar las ramas de tu repositorio.
+git branch "nombre"														// crea una rama del proyecto en git.
+git branch -m "nombre"													// cambia el nombre de la rama actual.
+git branch -m "nombre actual de la rama" "nombre nuevo de la rama"		// cambia el nombre de la rama desde cualquier rama.
+git branch -d "nombre"													// elimina una rama del epositorio local (no estar en la rama a eliminar)
+
+git checkout "nombre"													// te cambia de rama para trabajar en ella.
+git checkout -b "nombre"												// te permite cear una rama a partir de la rama actual y cambiar a esa rama
+git merge "nombre"														// combina las ramas (debes de estar en la rama para fusiona los achivos de la rama conexa).
+git merge --continue													// continua la combinacion automatica de las ramas.
+
+GITHUB
+
+git clone "ubicación/url"												// clona el epositorio de github a un repositorio local.
