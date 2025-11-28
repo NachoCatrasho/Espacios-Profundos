@@ -45,3 +45,9 @@ git merge --continue													// continua la combinacion automatica de las ra
 GITHUB
 
 git clone "ubicación/url"												// clona el epositorio de github a un repositorio local.
+
+git remote																// muestra el nombre que tiene el repositorio remoto.
+git remote -v															// 
+git push																// enviar los cambios al repositorio remoto (github).
+git pull "nombre de origen" "nombre de la rama"							// actualizar los cambios del epositorio remoto al repositorio local.
+git fech																// permite visualizar los cambios realizados en el repositorio remoto sin combinar los cambios.
