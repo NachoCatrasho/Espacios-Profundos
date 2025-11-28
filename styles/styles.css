@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding:0;
+    height:100%;
+    background: radial-gradient(circle at center, #0f9b3e 0%, #009933 80%);
+    position: relative;
+    overflow-x:hidden;
+}
+
+.glow{
+  position:fixed;
+  top:0; left:0;
+  background: radial-gradient(circle, rgba(105, 60, 60, 0.1) 0%, transparent 70%);
+  width:100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.star{
+  position: fixed;
+  background: #33ff22;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  opacity:5%;
+  animation: twinkle 3s infinite;
+  z-index: -1;
+}
+
+a{
+  color: black
+}
+
+#carta{
+  display: flexbox;
+  width: 0;
+}
+
+.personaje{
+  margin: 0;
+  padding: 0;
+}
+
+.ficha-carlos{
+  background: radial-gradient(circle at center, #000000, #1a1a1a 80%);
+  color: gray;
+  position:absolute;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px #222;
+}
+
+h2{
+  color: gray;
+}
+
+
+@keyframes twinkle{
+  0%, 100%{ opacity: 0.1; transform: scale(0.8)}
+  50% {opacity:1; transform: scale(1.5);}
+}

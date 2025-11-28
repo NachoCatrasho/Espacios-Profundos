@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+ body{
+  margin: 0;
+  padding: 0;
+	font-family: 'Uncial Antiqua', cursive;
+	height: 100%;
+	background-attachment: fixed;
+	background: radial-gradient(circle at center, #0f9b3e 0%, #009933 80%);
+	position: relative;
+	overflow-x: hidden;
+}
+
+/* Capa de brillo difuso */
+.glow{
+  position:fixed;
+  top:0%; left:0%;
+  width:100wv;
+  height:100vh;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  mix-blend-mode: overlay;
+  animation: moveGlow 20s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+.star{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #33ff22;
+  border-radius: 50%;
+  opacity: 5%;
+  animation: twinkle 3s infinite;
+}
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-conic-gradient(form 0deg, rgba(255,255,255,0.02) 0deg 10deg, transparent 10deg 20deg);
+  opacity: 0.01;
+  animation: distorsionar 20s infinite linear;
+  pointer-events: none;
+  z-index: -1;
+  mix-blend-mode: screen;
+}
+
+h1{	
+	height: 2.5em;
+	color:#131743;
+	text-align:center;
+}
+
+h2{ 
+	color:white;
+	text-align: center;
+}
+
+.ficha-carlos {
+  background: radial-gradient(circle at center, #000000, #1a1a1a 80%);
+  position:absolute;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px #222;
+}
+
+.ficha-carlos::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 70%);
+  animation: absorcion 6s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ficha-carlos > * {
+  position: relative;
+  z-index: 1;
+} 
+
+#yare{color:#410FB6; background-color:#0b0d13;}
+#rosario{color:#B4985C;}
+#pedro{color:#EB5D32;}
+#chelsy{color:#A523F1;}
+#antonio{color:#A56822;}
+#jesus{color:#031246;}
+#ronaldo{color:#F19354;}
+#luz{color:#F37A6E;}
+#suelen{color:#FF00D4;}
+#israel{color:#F3322F;}
+
+a{
+	font-family: 'Uncial Antiqua', cursive;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	border: 2px solid rgba(0,0,200,0.6);
+	/* background: rgba(0,0,200,0.3); */
+	/* color: rgba(0,0,200,0.6); */
+	box-shadow: 1px 1px 2px rgba(4, 118, 59, 0.4);
+	border-radius: 10px;
+	padding: 3px 10px;
+	display: inline-block;
+	cursor: pointer;
+	font-size:large;
+}
+
+button{
+	background-color: #66b48d;
+	border: solid 1px;
+}
+
+details {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #8ecae6;
+  border-radius: 16px;
+  padding: 1em;
+  margin: 1em auto;
+  width: 30%;
+  transition: 0.3s ease;
+
+  position: relative;
+  height: 50%;
+}
+
+details:hover {
+  box-shadow: 0 0 15px #015f1c;
+  transform: scale(1.10);
+}
+
+/* .personaje a {
+  text-decoration: none;
+  color: #ffcf5c;
+  font-size: 1.2em;
+} */
+
+details[open] .descripcion{
+	animation:aparecer 0.4 ease-in-out;
+}
+
+.realidad-alterada::before{
+	background:repeating-conic-gradient(from 0deg,rgba(255,255,255,0.07) 0deg 10deg,rgba(0,255,255,0.04) 10deg 20deg);
+	filter: hue-rotate(180deg) saturate(150%);
+	animation-duration: 6s;
+}
+
+details{
+  transform:translateY(20px);
+  animation: fateIn 1s ease-out forwards;
+}
+
+@keyframes distorsionar {
+  0% { transform: scale(1) rotate(0deg); filter: hue-rotate(0deg); }
+  50% { transform: scale(1.02) rotate(180deg); filter: hue-rotate(45deg); }
+  100% { transform: scale(1) rotate(360deg); filter: hue-rotate(0deg); }
+} 
+
+@keyframes aparecer{
+	from{
+		opacity: 0;
+		transform: translateY(-5px);
+	}
+
+	to{
+		opacity: 1;
+		transform:translateY(0);
+	}
+}
+
+@keyframes absorcion {
+  0% { transform: rotate(0deg) translate(0,0); }
+  100% { transform: rotate(360deg) translate(0,0); }
+}
+
+@keyframes moveGlow{
+  0% {transform: translate(-20%, -20%) scale(1);}
+  50% {transform: translate(10%, 10%) scale(1.1);}
+  100% {transform: translate(-10%, 5%) scale(1.05);}
+}
+
+@keyframes twinkle{
+  0%, 100% {opacity: 0.1; transform:scale(0.8);}
+  50% {opacity: 1; transform: scale(1.5);}
+}
