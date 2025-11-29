@@ -1,0 +1,12 @@
+Lista de propiedades para Css
+
+selectores:
+
+"*" = universal                                // añade los estilos a todos los elementos en html.
+"etiqueta" = tipo                              // añade los estilos a todos los elementos del mismo tipo.
+".clase" = clase                               // añade los estilos a todos los elementos con el atributo "class='nombre'".
+"#ID" = identificador único                    // añade los estilos a un elemento con el identificador "id=`nombre`".
+[nombre="contenido"] = atributo                // añade los estilos a un elemento por atributo.
+"selector" "selector" = descendiente           // añade los estilos a un elemento dentro de otro elemento.
+elemento:hover = Pseudo-clase                  // añade los estilos cuando el evento (mause pasa sobre el elemento) sucede.
+
