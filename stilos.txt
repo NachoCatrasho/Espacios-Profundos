@@ -1,6 +1,6 @@
-Lista de propiedades para Css
+Lista de propiedades para Css:
 
-selectores:
+Selectores:
 
 "*" = universal                                // añade los estilos a todos los elementos en html.
 "etiqueta" = tipo                              // añade los estilos a todos los elementos del mismo tipo.
@@ -8,5 +8,153 @@ selectores:
 "#ID" = identificador único                    // añade los estilos a un elemento con el identificador "id=`nombre`".
 [nombre="contenido"] = atributo                // añade los estilos a un elemento por atributo.
 "selector" "selector" = descendiente           // añade los estilos a un elemento dentro de otro elemento.
-elemento:hover = Pseudo-clase                  // añade los estilos cuando el evento (mause pasa sobre el elemento) sucede.
+elemento:hover = Pseudo-clase                  // añade los estilos cuando el evento (mouse pasa sobre el elemento) sucede.
+elemento:hover > elemento                      // hace que los estilos del elemento ">elemento" se apliquen al elemento "elemento:hover" colocar el mouse encima.
+elemento1, elemento2{}                         // añade los estilos a los elementos seleccionados.
+elementoPadre elementoHijo{}                     // añade los estilos a los elementos internos al contenedor. (hijos)
 
+Especificidad:
+
+Jerarquía: !important --> estilos en linea --> identificadores --> clases --> pseudo-clases --> atributos --> elementos --> pseudo-elementos
+
+ejemplo:
+
+p{
+    color: red !important;                      // vuelve la propiedad invulnerable
+}
+
+metodología BEM:
+
+.clase:first-child                              // selecciona el primer elemento en caso de que la clase contenga multiples instancias idénticas.
+
+Unidades de medida para los elementos:
+
+    fijas:
+
+        px = pixeles.                           // establece el tamaño en pixeles.
+        cm = centímetros.                       // establece el tamaño en centímetros.
+        mm = milímetros                         // establece el tamaño en milímetros.
+        m = milímetros                          // establece el tamaño en metros.
+
+    relativas:
+
+        em                                      // establece el tamaño en relación al contenedor superior al elemento. (Por defecto está en 16px.)
+        rem
+        vw                                      // es el porcentaje del tamaño total del ancho de la pantalla.
+        vh                                      // el el porcentaje del tamaño total del alto de la pantalla.
+        %                                       // es el porcentaje total de la caja contenedor.
+
+
+Propiedades de tipografía:
+
+font-size: unidad;                              // cambia el tamaño de la letra
+font-family: Georgia;                           // cambia el estilo de tipografía o la forma de la letra.
+line-height: unidad;                            // cambia el espacio que ocupa una letra. 1 line-height = 1/2 letra partiendo del centro.
+font-weight: unidad;                            // cambia el grosor de una letra.
+text-align: ;                                   // alinea el contenido.
+          : center;
+          : left;
+          :right;
+
+propiedades generales:
+
+color: color;                                   // establece el color del contenido del elemento. (texto)
+background-color: color;                        // establece el color de fondo del contenedor. (detrás del texto)
+width: unidad;                                  // establece el ancho del elemento.
+opacity: unidad;                                // otorga opacidad/transparencia al elemento. (los valores están ente el 0 y el 1)
+
+width: unidad;                                  // establece el ancho de un elemento.
+height: unidad;                                 // Establece el alto de un elemento.
+box-sizing:                                     // establece 
+           border-box;                          // inhibe que el contenido de la caja sobresalga en tamaño.
+           content-box;                         // añade contenido de distancia en la caja según las propiedades añadidas.
+
+cajas/contenedores: 
+
+    en bloque: 
+        ocupan todo el ancho del contenedor.
+        se les puede dar width y height.
+    en linea: 
+        ocupan el ancho del contenido.
+        no se les puede dar width ni height.
+
+outline:                                        // agrega un border sin afectar las cajas.
+
+display:                                        // cambia el comportamiento de caja. 
+        inline;                                 // vuelve una caja en un contenedor en linea.
+        block;                                  // vuelve una caja en un contenedor de bloque.
+        inline-block;                           // vuelve una caja en un contenedor tipo linea con propiedades de tipo bloque. (se pueden modificar las dimensiones de una caja)
+        
+        [
+        table;                                  // Hace que la caja se comporte como una tabla.
+        inline-table;                           // hace que la tabla se comporte como una caja de linea.
+        list-item;                              // hace que la caja se comporte como un objeto de una lista.
+        table-cell;                             // hace que la caja se comporte como una celda de una caja.
+        table-row;                              // hace que la caja se comporte como una fila de una tabla.
+        table-column;                           // hace que una caja se comporte como una columna en una tabla.
+        ]                                       // están en des-uso.
+
+        grid;                                   //
+        flex;                                   //
+
+overflow:                                       //
+        visible;                                // propiedad por defecto. Hace que el contenido desbordado sea visible.
+        auto;                                   // Si el contenido sobresale de la caja, hace que se pueda hacer scroll dentro de la caja.
+        scroll;                                 // coloca la barra de scroll sin requerirla.
+        hidden;                                 // recorta el contenido sobresaliente.
+
+
+position:                                       // Posiciona una caja afectando el flujo/orden de los elementos en el HTML.
+        static;                                 // valor por defecto. (Se considera que no está posicionado.)
+        relative;                               // Hace que la posición de la caja sea constante con su punto de creación.
+        absolute;                               // Posiciona la caja e relación al contenedor que la contenga o el viewport/pantalla del dispositivo.
+        fixed;                                  // Ancla la caja en la misma posición dentro del viewport.
+        sticky;                                 // Fusiona las propiedades de absolute y fixed.
+
+z-index: valor;                                 // Posiciona el contenido en el eje Z haciendo que que este por encima o debajo de las demás cajas.
+         
+
+padding: unidad;                                // Es la distancia que hay entre el texto y la caja contendedor.
+    -top:
+    -right:
+    -bottom:
+    -left:
+
+margin: propiedad;                              // Modifica la distancia entre cajas.
+        auto;                                   // Centra el contenido en la cajas.
+
+border: 5px solid blue;
+    -width:
+    -color:
+    -style: solid -- groove -- ridge(inverso a groove) -- dashed -- double -- inset(sin color) -- outset (inverso a inset)
+border-radius: unidad;                          // redondea el borde de la caja.
+
+box-shadow: 10px 10px 5px 0 red;                // Da sombra a la caja. (eje X) (eje Y) (tamaño de sombra/desenfoque) (borde) (color)
+text-shadow: propiedades;                       // Da sombra al texto. (eje X) (eje Y) (borde) (color)
+
+transform: función/propiedad;                   // transforma la caja.
+            rotate(unidad + deg);               // rota la caja N grados.
+
+transition:                                     // hace una transición de estilos según el valor puesto.
+            all "unidadTiempo"                  // todos los estilos.
+            width unidadTiempo                  // La transición se aplica al ancho.
+            height unidadTiempo                 // la transición se aplica a la altura.
+
+float:
+        right;                                  //
+        left;                                   //
+
+Pseudo-elementos: 
+                                                // no son elementos reales.
+::firs-line                                     // Solo funciona en elementos de tipo bloque. (no funciona en elementos "inline")
+::firs-letter                                   // Solo funciona en elementos de tipo bloque.
+input::placeholder                              // añade los estilos al texto por defecto que se coloca dentro de un input de tipo texto.
+::selection                                     // añade los estilos al momento de seleccionar.
+::after                                         // añade los estilos después del contenido de la etiqueta.
+::before                                        // añade los estilos Antes que nada.
+
+content: "texto"/contenido                      // añade contenido a una etiqueta antes del contenido real. (No se puede seleccionar el contenido agregado.)
+
+Pseudo-clases:                                  // escuchan llamadas a funciones/eventos para añadir los estilos.
+
+::hover                                         // espera a que el ratón/mouse este sobre el elemento.

@@ -31,8 +31,8 @@ a{
   color: black
 }
 
-#carta{
-  display: flexbox;
+#carta #personaje{
+  display: inline-block;
   width: 0;
 }
 
