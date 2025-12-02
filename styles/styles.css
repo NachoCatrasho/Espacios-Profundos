@@ -7,6 +7,19 @@ body{
     overflow-x:hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Enlaces */
+a:link{
+  color:#000
+}
+
+a:visited{
+  color:#555
+}
+
 .glow{
   position:fixed;
   top:0; left:0;

@@ -158,3 +158,5 @@ content: "texto"/contenido                      // añade contenido a una etique
 Pseudo-clases:                                  // escuchan llamadas a funciones/eventos para añadir los estilos.
 
 ::hover                                         // espera a que el ratón/mouse este sobre el elemento.
+::link                                          // Cambia los estilos a los enlaces no visitados.
+::visit                                         // Cambia los estilos a los enlaces visitados.
