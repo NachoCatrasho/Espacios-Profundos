@@ -54,7 +54,22 @@ font-weight: unidad;                            // cambia el grosor de una letra
 text-align: ;                                   // alinea el contenido.
           : center;
           : left;
-          :right;
+          : right;
+          : start;
+          : end:;
+
+text-decoration:                                // Coloca lineas de remarcado al texto.
+                : underline;                    // Coloca una linea debajo del texto.
+                : overline;                     // Coloca una linea por encima del teto.
+                : line-through;                 // tacha el texto.
+
+text-transform:                                 // Transforma el texto.
+            : uppercase;                        // Convierte todo a mayúsculas.
+            : lowercase;                        // Convierte todo a minúsculas.
+            : capitalize;                       // Convierte la primera letra de cada palabra en mayúscula.
+
+
+
 
 propiedades generales:
 
