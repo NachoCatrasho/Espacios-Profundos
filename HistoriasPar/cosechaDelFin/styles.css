@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b1bdca;
+    color: #338296;
+    font-family: monospace, 'Consolas', 'Courier New';
+    line-height: 1.6;
+    text-align: justify;
+    margin: .4em;
+}
+
+.ventana {
+    /* Base de la ventana de estado (semi-transparente) */
+    background-color: rgba(10, 20, 30, 0.8); 
+    border: 1px solid #00FFFF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    font-weight: 900;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(2px); /* Efecto sutil de desenfoque detrás, si el lector lo soporta */
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+.h1 {
+    /* Título de la ventana (Ej: "Ventana de Estado") */
+    color: #00FFFF;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #00FFFF;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.advertencia{
+    background-color: rgba(255, 0, 0, 0.8);
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 900;
+    margin: 15px;
+    padding:10px;
+    border-radius: 10px;
+    border: 2px solid #FF4500;
+    box-shadow:0 0 10px rgba(255, 69, 0, 0.7);
+}
+
+.ventanaL {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #ffb6c1;
+    border: 2px solid #ff69b4;
+    box-shadow: 0 0 10px #ffe4e1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.h1L{
+    border-bottom: 2px solid #d880ac;
+}
