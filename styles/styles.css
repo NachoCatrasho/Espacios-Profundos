@@ -7,8 +7,22 @@ body{
     overflow-x:hidden;
 }
 
+h1{
+    font-size: 5em;
+    text-shadow: 5px 5px 10px rgba(7, 7, 34, 0.4);
+    color:rgba(21, 6, 63, 0.533);
+    text-align:center;
+}
+
+.cear{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: -20px;
+}
+
 a{
-    text-decoration: none;
+  color:#888;
+    /* text-decoration: none; */
 }
 
 /* Enlaces */
@@ -20,10 +34,11 @@ a:visited{
   color:#555
 }
 
+/* efecto de movimiento */
 .glow{
   position:fixed;
   top:0; left:0;
-  background: radial-gradient(circle, rgba(105, 60, 60, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(105, 60, 60, 0.1) 0%, transparent 50%);
   width:100vw;
   height: 100vh;
   z-index: -1;
@@ -32,29 +47,33 @@ a:visited{
 .star{
   position: fixed;
   background: #33ff22;
+  rotate: 45deg;
   width: 0;
   height: 0;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   opacity:5%;
   animation: twinkle 3s infinite;
   z-index: -1;
 }
 
-a{
-  color: black
-}
-
-#carta #personaje{
-  display: inline-block;
+.carta {
+  /* display:grid; */
   width: 0;
+
+  position: relative;
+  
 }
 
 .personaje{
-  margin: 0;
+  margin: 10px;
   padding: 0;
+  display:inline-block;
+
+  background-color: #0055;
+  margin-left:auto;
 }
 
-.ficha-carlos{
+/* .ficha-carlos{
   background: radial-gradient(circle at center, #000000, #1a1a1a 80%);
   color: gray;
   position:absolute;
@@ -62,10 +81,10 @@ a{
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 0 15px #222;
-}
+} */
 
 h2{
-  color: gray;
+  color: #1a1a1a;
 }
 
 
