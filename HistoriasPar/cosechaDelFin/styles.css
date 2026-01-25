@@ -1,188 +1,387 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
+/* reinicio y base de estilos*/
+
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body{
-    background-color: #b1bdca;
-    color: #338296;
-    /* max-width: 800px; */
-    font-family: monospace, 'Consolas', 'Courier New';
-    line-height: 1.6;
-    text-align: justify;
+
     margin: 0;
     padding: 2em;
+    font-family: monospace, 'Consolas', 'Courier New';
+    background-color: #b1bdca;
+    color: #185868;
+    line-height: 1.6;
+    min-height: 100vh;
+
 }
+
+main{
+
+    max-width: 800px;
+    margin: auto;
+
+}
+
+/* estilos tipográficos */
 
 h1{
+
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5em;
+    margin-bottom: 0.7em;
+    font-size: 2.7em;
     color: #204051;
-    font-family: 'Courier New';
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.5em;
+
 }
 
+h2{
+    /* títulos de capítulos */
 
+    text-align: end;
+    color: #2a5c6e;
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: italic;
 
-.ventana, .advertencia, .ventanaL {
+}
 
+h3{
+    /* títulos de ventanas*/ 
+
+    font-size: 1.5em;
+    color: #00ffff;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+
+}
+
+.text p{
+
+    text-align: justify;
+    margin-bottom: 1em;
+    padding: 0 10px;
+
+}
+
+/* estilos del texto de la historia */
+
+.text{
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+
+}
+
+.text p:first-of-type{ margin-top: 0; }
+
+.text p:last-of-type{ margin-bottom: 0;}
+
+aside{
+
+    margin: 20px auto;
+    padding: 20px 0;
+
+}
+
+/* estilos de las ventanas */
+
+.ventana, .advertencia, .ventanaL{
+
+    width: 85%;
+    margin: 30 auto;
+    padding: 30px;
+    border-radius: 8px;
     opacity: 0;
     transform: translateY(20px);
-    animation: all 0.8s ease-out;
-
-    /*pruebas*/
-
-    /* filter: brightness(0.95); /* Un poco más apagada por defecto 
-    transition: filter 0.3s ease, transform 0.3s ease; */
-
-}
-
-/* .ventana:hover, .advertencia:hover, .ventanaL:hover {
-    filter: brightness(1.05); /* Se ilumina sutilmente al pasar el mouse 
-    transform: scale(1.01);
-} */
-
-.ventana:hover {
-    transform: scale(1.02);
-}
-
-.ventanaL:hover {
-    transform: scale(1.02);
-}
-
-.aparecer {
-
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.ventana {
-    /* Base de la ventana de estado (semi-transparente) */
-    background-color: rgba(10, 20, 30, 0.8); 
-
-    background: linear-gradient(135deg, rgba(10, 20, 30, 0.85), rgba(20, 40, 60, 0.85));
-    border-left: 5px solid #00FFFF;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0,  0.5);
-    transition: transform 0.3s ease;
-
-    border: 1px solid #00FFFF;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-    font-weight: 900;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    backdrop-filter: blur(2px); /* Efecto sutil de desenfoque detrás, si el lector lo soporta */
+    transition: all 0.8s ease-out;
+    font-weight: 900px;
+    letter-spacing: 2px;
     text-align: center;
-    letter-spacing: 3px;
-    margin: 50px 0 50px 0;
+
+}
+
+/* Ventanas por defecto */
+
+.ventana{
+
+    background: linear-gradient(135deg, rgba(10,20,30, 0.85), rgba(11,34,59,0.85));
+    border-top: 1px solid #00ffff;
+    border-right: 4px double #00ffff;
+    border-bottom: 1px double #00ffff;
+    border-left: 1px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0,255,255,0.5);
+    backdrop-filter: blur(2px);
+    line-height: 1.35;
+
 }
 
 .ventana p{
-    font-family: 'Courier New', Courier, monospace;
+
+    font-family: monospace, 'Consolas', 'Courier New';
     font-size: 0.9em;
+    margin: 10px 0;
+
 }
 
+.ventana:hover, .ventanaL:hover{
 
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(13, 240, 221, 0.7);
 
-
-
-
-.h1 {
-    /* Título de la ventana (Ej: "Ventana de Estado") */
-    color: #00FFFF;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 2px solid #00FFFF;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
 }
 
-
+/* ventana de advertencia*/ 
 
 .advertencia{
 
     animation: pulso-error 2s infinite;
+    background: linear-gradient(135deg, rgba(255,0,0,0.4), rgba(139, 0, 0, 0.8));
     border: 2px solid #ff4b2b;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.7);
+    color: white;
 
-    background-color: rgba(255, 0, 0, 0.8);
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 900;
-    margin: 15px;
-    padding:10px;
-    border: 2px solid #FF4500;
-    box-shadow:0 0 10px rgba(255, 69, 0, 0.7);
-    margin: 50px 0 50px 0;
 }
 
-/*
-.ventanaL {
-    background: linear-gradient(145deg, #ffb6c1, #ffd1dc);
-    color: #5a3e4d;
+.advertencia h3{
+    color: #ffcc00;
+    border-bottom-color: #ffcc00;
+    font-size: 
+    1.8rem;;
+}
+
+/* ventana de Lucas */
+
+.ventanaL{
+
+    background: linear-gradient(145deg, #a5bb8a, #58614e);
+    color: #294416;
     font-family: "Shadows Into Light", cursive;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: 1px;
-    background-color: #ffb6c1;
-    border: 3px double #ff69b4;
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    margin: 50px 0 50px 0;
+    border: 5px double #7a8d60;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 
-    transition: transform 0.3s ease;
 }
-    
-.h1L{
-    border-bottom: 2px solid #d880ac;
-}
-*/
 
-.ventanaL {
-    /* Un verde salvia seco, muy relajante */
-    background: linear-gradient(145deg, #c2d5aa, #a9c28a); 
-    color: #2f3e24; /* Verde bosque muy oscuro para máxima legibilidad */
+.ventanaL h3{
+
+    color: #2bff00;
+    border-bottom: 2px solid #ad668a;
     font-family: "Shadows Into Light", cursive;
-    font-weight: 900;
-    text-align: center;
-    
-    /* El borde doble ahora es un verde oliva profundo */
-    border: 3px double #7a8d60; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    
-    border-radius: 10px;
-    padding: 20px;
-    margin: 50px 0;
-    transition: transform 0.3s ease;
+    font-size: 1.8rem;
+
 }
 
-.h1L {
-    border-bottom: 2px solid #7a8d60;
-    color: #1e2b14;
+/* ====== CHARACTER SHEET COMPONENTS ===== */
+
+.datos, .stats, .primarias{
+
+    margin: 15px 0;
+    padding: 10;
+    border-radius: 5px;
+
+}
+
+.datos{
+
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.01);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+.datos p{
+
+    margin: 8px 0;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.stats{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin: 15px 0;
+
+}
+
+.stats p{
+
+    margin: 5px 0;
+    padding: 5px 10px;
+
+}
+
+.stats p:nth-child(1){ color: #c02c2c; }
+.stats p:nth-child(2){ color: #59168f; }
+.stats p:nth-child(3){ color: #4ecdc4; }
+.stats p:nth-child(4){ color: #ffe56d; }
+.stats p:nth-child(5){ color: #ff9e6d; }
+
+.primarias{
+
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3)
+
+}
+
+.primarias h3{
+
     margin-bottom: 15px;
-    padding-bottom: 5px;
+    color: #00ffff;
+
+}
+
+ul{
+
+    list-style: none;
+    padding: 0;
+    margin:0;
+
+}
+
+ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height:1.4;
+    text-align: left;
+    padding: 10px;
+    border-left: 3px sold #00ffff;
+
+}
+
+li:hover{
+
+
+    transform: translateX(5px);
+    transition:all 0.3s ease;
+
 }
 
 
+/* animaciones */
 
+@keyframes pulso-error{
 
-
-@keyframes pulso-error {
-    0% {
+    0%{
         box-shadow: 0 0 5px #ff4b2b;
     }
-    50% {
-        box-shadow: 0 0 20px #ff4b2b;
+
+    50%{
+        box-shadow: 0 0 25px #ff4b2b;
     }
-    100% {
+
+    100%{
         box-shadow: 0 0 5px #ff4b2b;
     }
+
+
+
 }
+
+.aparecer {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+/* designación responsiva */
+
+@media (max-width: 768px){
+
+    body{
+        padding: 1em;
+        max-width: 100%;
+    }
+
+    main{ max-width: 100%; }
+
+    h1{ font-size: 2em; }
+
+    h2{ font-size: 1.2em; }
+
+    .ventana, .advertencia, .ventanaL{
+
+        width: 95%;
+        padding: 15px;
+
+    }
+
+    .stats{ grid-template-columns: 1fr; }
+
+    .datos p{
+
+        padding-left: 10px;
+        font-size: 1rem;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body{
+
+        padding: 0.5em; 
+
+    }
+
+    h1{
+        font-size: 1.7em;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .ventana, .advertencia, .ventanaL{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .text{
+        padding: 15px 10px
+    }
+
+}
+
+/* clases de utilidad */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.p-20 { padding: 20px; }
 
 
 /*pruebas de css para los enlaces*/
