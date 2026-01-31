@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="historia.css">
+    <link rel="stylesheet" href="ventanas.css">
+    <link rel="stylesheet" href="fichas.css">
+    <style>
+
+        body{
+
+            background: linear-gradient(145deg, #b1bdca, #667a36, #495e17);
+            min-height: 100vh;
+            margin: 0;
+            background-attachment: fixed;
+
+        }
+
+        .text p{
+            color: #062169;
+        }
+
+        .almanaque {
+            background: linear-gradient(145deg, #546d37), #5f0f44;
+            color: #36352d;
+            border: 4px double #5d4037;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace; /* Estilo máquina de escribir */
+        }
+
+        .rareza.mutado {
+            color: #9c27b0; /* Púrpura para rareza especial */
+            font-weight: bold;
+        }
+
+
+    </style>
     <title>COSECHA DEL FIN</title>
 </head>
 <body>
@@ -13,104 +46,320 @@
         <header>
 
             <h1>COSECHA DEL FIN</h1>
-            <h2>CAPITULO 3</h2>
+            <h2>CAPÍTULO 3</h2>
 
         </header>
 
+        <section class="text">
+
+            <p>La mañana todavía no llegaba, el silencio en la cálida penumbra fue roto por el súbito inicio de "WASHING MACHINE" de Mitski.</p>
+
+            <p>La alarma de las cinco había comenzado a sonar despertando a Lucas. Como acostumbraba, dejó que la alarma continuara hasta finalizar la canción mientras comenzaba sus estiramientos matutinos. Desabotonó las mangas y el cuello de su camisa para una mayor movilidad dejando al aire unas marcas sobre su piel.</p>
+
+            <p>Se sentía sucio por el trabajo del día anterior, pero no había forma de asearse más allá del agua para regar las plantas. Colocó "Bang Bang" de K'NAAN para continuar con la mutación de la semilla al ver en su <button class="despliegue" onclick="toggleWin()">ficha</button> que el mana se había recuperado.</p> <!-- añadir función abrir/cerrar ventana-->
+
+        </section>
+
+        <div class="ventana lucas" id="ficha">
+
+            <h3>FICHA DE JUGADOR</h3>
+
+            <div class="datos">
+
+                <p><strong>Fecha</strong>: 11/10/2022</p>
+
+                <p><strong>Nombre</strong>: Lucas Martines Gonzales</p>
+                <p><strong>Edad</strong>: 17años 11meses 23días</p>
+                <p><strong>Raza</strong>: Humano(?)</p>
+
+                <p> <strong>Juego</strong>: Plantas vs Zombies </p>
+                <p><strong>Clase</strong>: Jardinero</p>
+                <p><strong>Nivel</strong>: 1 <em>(XP: 0%)</em></p>
+
+            </div>
+
+            <div class="stats">
+
+                <p> <strong>HP</strong>: 299.1/300</p>
+                <p> <strong>MP</strong>: 10/10</p>
+                <p> <strong>Fuerza</strong>: 15</p>
+                <p> <strong>Agilidad</strong>: 17 + 0.2</p>
+                <p> <strong>Destreza</strong>: 14 + 0.1</p>
+
+            </div>
+
+            <div class="primarias">
+
+                <details>
+
+                    <summary class="titulo"><strong>HABILIDADES PRIMARIAS</strong></summary>
+
+                        <ul class="habilidad">
+                            <li>
+
+                                <details>
+
+                                    <summary> <strong>Maestría</strong>:</summary>
+
+                                    <p>Puedes aprender y enseñar con facilidad.</p>
+
+                                </details>
+
+                            </li>
+                            <li>
+
+                                <details>
+
+                                    <summary> <strong>Cocina</strong>:</summary>
+
+                                    <p>Tus platillos son más deliciosos y mejoras la calidad de los ingredientes después de procesarlos.</p>
+
+                                </details>
+
+                            </li>
+                            <li>
+
+                                <details>
+
+                                    <summary> <strong>Agilidad</strong>:</summary>
+
+                                    <p>Añade cierto porcentaje a tus estadísticas de agilidad y destreza.</p>
+
+                                </details>
+
+                            </li>
+                        </ul>
+
+                </details>
+
+            </div>
+
+            <div class="clase">
+
+                <details>
+
+                    <summary class="titulo"><strong>HABILIDADES DE CLASE</strong> </summary>
+
+                    <ul>
+
+                        <li>
+
+                            <details>
+
+                                <summary> <strong>Jardinero</strong> (Principiante)</summary>
+
+                                <p>Puedes plantar y cultivar plantas.</p>
+
+                            </details>
+
+                        </li>
+
+                        <li>
+
+                            <details>
+
+                                    <summary> <strong>Paciencia del jardinero</strong> (Principiante)</summary>
+
+                                    <p>Cuando tienes que esperar largos periodos de tiempo, existe una probabilidad de entrar en modo automático.</p>
+
+                            </details>
+
+                        </li>
+
+                        <li>
+
+                            <details>
+
+                                    <summary> <strong>Modo automático</strong> (principiante)</summary>
+
+                                    <p>si te concentras lo suficiente, puedes realizar tareas automáticamente.</p>
+
+                            </details>
+
+                        </li>
+
+                        <li>
+
+                            <details>
+
+                                <summary> <strong>Mano de jardinero</strong> (Principiante)</summary>
+
+                                <p>Tienes un 25% de probabilidad de que una semilla brote y se desarrolle correctamente.</p>
+
+                            </details>
+
+                        </li>
+
+                    </ul>
+
+                </details>
+
+
+            </div>
+
+            <div class="jugador">
+
+                <details>
+
+                    <summary class="titulo"> <strong>HABILIDADES DE JUGADOR</strong> </summary>
+
+                    <ul>
+
+                        <li>
+
+                                <details>
+
+                                    <summary>Mutación de semillas <strong>[Girasol]</strong></summary>
+
+                                <p>Puedes convertir la semilla de un girasol común en uno mutado. ^_^</p>
+
+                            </details>
+
+                        </li>
+
+
+
+                    </ul>
+
+                </details>
+
+            </div>
+
+        </div>
+
+        <section class="text">
+
+            <p>Después de varios intentos finalmente logró inyectar los ocho puntos de mana. Al completar la mutación emergió una ventana de felicitación, sin embargo otra ventana se superpuso desvaneciendo la anterior.</p>
+
+        </section>
+
+        <section class="ventana message">
+
+            <h3>¡¡FELICIDADES!!</h3>
+
+            <p>¡Has adquirido una nueva habilidad¡</p>
+            <p>Control de mana: Ahora puedes mover libremente el mana de tu cuerpo</p>
+
+        </section>
+
+        <section class="text">
+
+            <p>Lucas no estaba sorprendido por la habilidad, pero una sonrisa se dibujó por haberla adquirido con el primer éxito. Tan solo le tomó un día.</p>
+            <p>Examinó la semilla. No tenía diferencia alguna.</p>
+
+        </section>
+
+        <article class="ventana almanaque">
+
+            <h3> GIRASOL <strong>[MUTADO]</strong> </h3>
+
+            <p>Una semilla que ha sido modificada por fuerzas extrañas</p>
+            <p>Su planta tiene la capacidad de purificar el mana ambiental.</p>
+
+        </article>
+
+        <section class="text">
+
+            <p>Enterró la semilla en la maceta. En cuestión de segundos emergió un brote. La plántula era anormal.</p>
+
+            <p>Un tallo largo y delgado que sostenía lo que parecía ser un capullo de rosa, aunque era exageradamente más grande. Milagrosamente el brote crecía recto y con fuerza.</p>
+
+            <p>—No parece un girasol —, mencionó Lucas mientras miraba la planta frente a él, era lo suficientemente grande como para caber en su mano.</p>
+
+            <p>Con calma volvió al mismo estante donde encontró la semilla. Para su conveniencia encontró otra más. Mirando las macetas encontró que otra había ocupado el lugar de donde tomó la primera.</p>
+
+            <p>No dudó en tomarlo todo para repetir el proceso, pero pasó por alto que sus reservas de mana eran insuficientes para mutar más.</p>
+
+            <p>Decidió jugar un rato con su teléfono para pasar el tiempo, pero se aburrió más rápido de lo que le gustaría. Miró de reojo el girasol, ya había crecido unos centímetros más y comenzaba a sacar una hoja de su tallo.</p>
+
+            <p>—¿Tan pronto? —Se preguntó al encontrar el [ALMANAQUE] entre sus habilidades.</p>
+
+        </section>
+
+        <article class="ventana almanaque" aria-labelledby="almanaque-titulo">
+
+            <header class="almanaque header">
+
+                <h3 id="almanaque-titulo">»ALMANAQUE«</h3>
+
+            </header>
+        
+            <section class="almanaque-entrada">
+        
+                <header class="entrada-header">
+                    
+                    <h4 class="planta">Girasol <span class="rareza comun">[Común]</span></h4>
+
+                </header>
+        
+                <div class="entrada descripcion">
+
+                    <p>Una planta considerada maleza por algunos y preciada por otros. Siempre busca la luz del sol.</p>
+                    <p>Se puede recolectar para conseguir una variedad de ingredientes.</p>
+
+                </div>
+
+                <header class="almanaque header">
+
+                    <h4 class="planta"> Girasol <span class="rareza mutado">[Mutado]</span></h4>
+
+                </header>
+
+                <div>
+
+                    <p>Una planta modificada por fuerzas extrañas para purificar el mana del ambiente.</p>
+
+                    <footer> <p> <strong>Nota</strong>: Estéril.</p> </footer>
+
+                </div>
+        
+            </section>
+        
+        </article>
+
+        <section class="text">
+
+            <p>Lucas se sorprendió al ver que había adquirido el [Almanaque] tan pronto como creció su primer girasol.</p>
+            <p>Al leer la descripción revisó su ficha para ver su mana crecer. Pero no hubo cambios.</p>
+
+            <p>—O es muy lento, o es que necesita creer —, murmuró viendo su estadística de MP.</p>
+            <p>Como ya no sabía que más hacer, comenzó a hacer ejercicios ligeros, pero los abandonó porque el uniforme era apretado para ejercicios complejos.</p>
+
+            <p>Al ver que la luz comenzaba a calentar el ambiente, y una fina capa de rocío se formaba en las lonas, replanteó sus metas.</p>
+            <p>No tenía nada que hacer. Tomó su teléfono y puso "Summertime Sadness" de Lana del Rey.</p>
+            <p>Se sentó en el medio del vivero y comenzó a meditar, movía el mana de su cuerpo siguiendo la  misma técnica. Buscaba sentir el mana.</p>
+
+            <p>Pasaron dos horas, solo marcadas por el cambio de la música. No había logrado sentir nada. Volteó en dirección a su girasol.</p>
+            <p>Había crecido un poco más, —Ya veo —, dijo al percatarse de que el tamaño de las macetas no eran exagerados.</p>
+            <p>El girasol ya había alcanzado los 30 centímetros de altura, el capullo que sostenía creció aún más, estaba tomando la forma de un girasol de gran tamaño.</p>
+
+            <p>Mientras se acercaba revisó su ficha, había recuperado 2 puntos de MP.</p>
+            <p>En cuanto se acercó a la planta un mensaje apareció.</p>
+
+            <article class="ventana message">
+
+                <h3>Has adquirido 0.1 MP</h3>
+
+            </article>
+
+        </section>
+        
+
+        <footer>
+
+            <nav aria-label="navegacion-capitulos">
+
+                <a href="cdf2.html"> CAPÍTULO ANTERIOR</a>
+
+                <a href="index.html">INICIO</a>
+
+                <a href="cdf4.html">CAPíTULO SIGUIENTE</a>
+
+            </nav>
+
+        </footer>
+
     </main>
-    
-    <!-- adquisición de habilidad y utilización de habilidades
-
-    <h1>COSECHA DEL FIN</h1>
-
-    <h2>Capitulo 3</h2>
-
-    <p>La luz de la mañana se hizo presente en el templado vivero.</p>
-    <p>El teléfono de Lucas sonaba con su alarma indicando las 5 de la mañana.</p>
-
-    <p>Lucas se despertó por la música, sonaba "WASHING MACHINE" de Mitsky.</p>
-
-    <p>Dejó que la música terminara mientras hacia sus estiramientos.</p>
-    <p>Después de terminar apagó la alarma y volvió a poner otra lista de reproducción, está vez más animada.</p>
-    <p>Como no había lugar para asearse, no tuvo más opción que soportar el resto del día sin limpiarse.</p>
-    <p>Reviso su ficha de jugador para ver si ya había recargado su mana.</p>
-    <p>Vio que su MP estaba completamente lleno.</p>
-
-    <p>Todavía estaba oscuro, sin embargo el interior del vivero era cálido.</p>
-
-    <p>Siguiendo con la misión del día anterior, saco la semilla de su bolsa.</p>
-    <p>Al igual que las veces anteriores, la ventana de progreso había desaparecido.</p>
-
-    <p>Volvió a inyectar el mana en la semilla, pero ahora había logrado introducir los ocho puntos de mana.</p>
-
-    <p>Una ventana de felicitación apareció frente a él, pero otra ventana se colocó justo encima de esa. </p>
-
-    <div class="ventanaL">
-
-        <p class="h1L">¡¡FELICIDADES!!</p>
-        <P>!Has adquirido una nueva habilidad¡ 🎉</P>
-
-        <p>Control de mana lv1: Ahora puedes mover libremente el mana de tu cuerpo.</p>
-
-    </div>
-
-    <p>Lucas no estaba sorprendido por la adquisición de la habilidad, pero una sonrisa se dibujo en su rostro al ver que la obtuvo con tan solo un éxito.</p>
-
-    <p>Examinado la semilla se percató de que no tenía diferencia alguna de cualquier otra.</p>
-    <p>Esperaba que tuviera alguna diferencia que la distinguiera de las demás.</p>
-    <p>Pero una pequeña ventana apareció sobre ella.</p>
-
-    <div class="ventanaL">
-
-        <p class="h1L">Semilla de girasol mutado</p>
-
-        <p>Una semilla que ha sido modificada por fuerzas extrañas con la capacidad de purificar el mana del ambiente.</p>
-    
-    </div>
-
-
-    <p>Tomó la maceta que estaba al lado de la semilla cuando la recogió.</p>
-    <p>Hizo un hueco y la sembró con la misma delicadeza con la que trataba a sus plantas en casa.</p>
-    <p>No ocurrió mucho tiempo antes de que un brote surgiera.</p>
-    <p>El brote lucia anormal.</p>
-    <p>Su tallo era recto, sin hojas, y solo había lo que parecía ser el capullo de una rosa considerablemente más grande que el tallo.</p>
-    <p>Con calma pero Emocionado volvió al estate donde encontró la semilla, en busca de más.</p>
-    <p>Para su conveniencia había otra semilla junto a otra maceta.</p>
-
-    <p>No dudó en tomarlo todo y repetir el proceso, sin embargo se había olvidado de que sus reservas tenía que volver a recuperarse para mutar otra semilla.</p>
-
-    <p>Llevó consigo las nuevas adquisiciones y las colocó a un costado de la maceta con el brote.</p>
-    <p>No encontraba más por hacer mientras esperaba, por lo que saco su teléfono y se puso a jugar.</p>
-    <p>Después de un rato se aburrió y comenzó a revisar su ficha. encontrando así un apartado nuevo entre sus habilidades.</p>
-
-    <div class="ventanaL">
-
-        <p class="ventanaL">»ALMANAQUE«</p>
-
-        <p>[GIRASOL] Común: Una planta considerada maleza por algunos, preciada por otros. siempre viendo al sol, se puede recolectar para conseguir ua variedad de ingredientes.</p>
-        <p>[GIRASOL] Mutado: Una planta modificada por fuerzas extrañas; Puede purificar el mana del ambiente para su fácil recolección.</p>
-
-    </div>
-
-    <p>Lucas se sorprendió al ver que obtuvo el almanaque justo después de plantar su primera semilla.</p>
-    <p>Al ver la descripción del girasol mutado, volvió a revisar su ficha sin encontrar nada nuevo.</p>
-    <p>Como ya no sabia que más hacer se preparo para ejercitar su cuerpo.</p>
-
-    <br>
-
-    <p>Después de sus primeros calentamientos abandonó la idea de ejercitarse, pues el uniforme era muy incomodo.</p>
-    <p>La luz comenzaba a calentar el ambiente, una fina capa de rocío comenzó a formarse en las lonas que contenían al vivero.</p>
-    <p>Replanteo sus metas, y sin encontrar algo para hacer, y sin posibilidad de salir optó por averiguar si podía descubrir más acerca del mana.</p>
-    <p>Al igual que la primera vez guio a sus manos el mana, pero esta vez no tenía nada para inyectarlo.</p>
-    <p>Su meta no era mover el mana de su cuerpo, sino que quería sentirlo.</p>
-    <p>Después de un tiempo intentando sentir el mana, casualmente siendo interrumpido el cambio de música que hacia su teléfono.</p>
-    <p>Decidió tomarse un descanso para revisar su girasol, no sin antes revisar en su ficha si había recuperado su mana.</p>
-    <p>Se sintió decepcionado al descubrir que solo había recuperado dos puntos de mana.</p>
-    <p>Al llegar a la maceta notó que el brote había crecido un poco más.</p>
-    <p>Pero lo que más le llamó la atención fue que recibió un mensaje indicado que había recuperado medio punto de mana.</p>
-
--->
-
 
     <script src="app.js"></script>
 

@@ -1,0 +1,91 @@
+/* ======= ventana de Lucas ======= */
+
+.lucas{
+
+    background: linear-gradient(145deg, #a5bb8a, #58614e);
+    color: #294416;
+    font-family: "Shadows Into Light", cursive;
+    border: 5px double #7a8d60;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.lucas .titulo, .lucas h3{
+
+    color: #2bff00;
+    border-bottom: 2px solid #ad668a;
+    font-size: 1.8rem;
+
+}
+
+
+/* ====== CHARACTER SHEET COMPONENTS ===== */
+
+.datos, .stats, .primarias{
+
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.datos{
+
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.01);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+.datos p{
+
+    margin: 8px 0;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.stats{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin: 15px 0;
+
+}
+
+.stats p{
+
+    margin: 5px 0;
+    padding: 5px 10px;
+
+}
+
+.stats p:nth-child(1){ color: #c02c2c; }
+.stats p:nth-child(2){ color: #59168f; }
+.stats p:nth-child(3){ color: #4ecdc4; }
+.stats p:nth-child(4){ color: #ffe56d; }
+.stats p:nth-child(5){ color: #ff9e6d; }
+
+.primarias{
+
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3)
+
+}
+
+.primarias h3{
+
+    margin-bottom: 15px;
+    color: #00ffff;
+
+}
+
+/* ========== animaciones =========== */
+
