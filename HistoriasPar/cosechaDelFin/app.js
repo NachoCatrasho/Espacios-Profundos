@@ -9,10 +9,12 @@ const elementosVentana = document.querySelectorAll('.ventana, .advertencia, .ven
     observador.observe(el);
 });
 
-function toggleWin(){
-
-    const ficha= document.getElementById('ficha')
+// Ejemplo para app.js
 
 
-
+function toggleWin() {
+    const el = document.getElementById('ficha');
+    if (el) {
+        el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
+    }
 }

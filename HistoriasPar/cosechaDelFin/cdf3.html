@@ -27,12 +27,24 @@
             border: 4px double #5d4037;
             border-radius: 8px;
             padding: 15px;
-            font-family: 'Courier New', Courier, monospace; /* Estilo máquina de escribir */
+            font-family: 'Courier New', Courier, monospace;
         }
 
         .rareza.mutado {
-            color: #9c27b0; /* Púrpura para rareza especial */
+            color: #9c27b0;
             font-weight: bold;
+        }
+
+        #ficha{
+
+            display: none;
+
+        }
+
+        #ficha .activa{
+
+            display:block
+
         }
 
 
@@ -56,7 +68,7 @@
 
             <p>La alarma de las cinco había comenzado a sonar despertando a Lucas. Como acostumbraba, dejó que la alarma continuara hasta finalizar la canción mientras comenzaba sus estiramientos matutinos. Desabotonó las mangas y el cuello de su camisa para una mayor movilidad dejando al aire unas marcas sobre su piel.</p>
 
-            <p>Se sentía sucio por el trabajo del día anterior, pero no había forma de asearse más allá del agua para regar las plantas. Colocó "Bang Bang" de K'NAAN para continuar con la mutación de la semilla al ver en su <button class="despliegue" onclick="toggleWin()">ficha</button> que el mana se había recuperado.</p> <!-- añadir función abrir/cerrar ventana-->
+            <p>Se sentía sucio por el trabajo del día anterior, pero no había forma de asearse más allá del agua para regar las plantas. Colocó "Bang Bang" de K'NAAN para continuar con la mutación de la semilla al ver en su <button class="btnFicha" id="despliegue" onclick="toggleWin()">ficha</button> que el mana se había recuperado.</p>
 
         </section>
 
@@ -237,7 +249,7 @@
 
             <h3>¡¡FELICIDADES!!</h3>
 
-            <p>¡Has adquirido una nueva habilidad¡</p>
+            <p>¡Has adquirido una nueva habilidad!</p>
             <p>Control de mana: Ahora puedes mover libremente el mana de tu cuerpo</p>
 
         </section>
@@ -322,7 +334,7 @@
             <p>Lucas se sorprendió al ver que había adquirido el [Almanaque] tan pronto como creció su primer girasol.</p>
             <p>Al leer la descripción revisó su ficha para ver su mana crecer. Pero no hubo cambios.</p>
 
-            <p>—O es muy lento, o es que necesita creer —, murmuró viendo su estadística de MP.</p>
+            <p>—O es muy lento, o es que necesita crecer —, murmuró viendo su estadística de MP.</p>
             <p>Como ya no sabía que más hacer, comenzó a hacer ejercicios ligeros, pero los abandonó porque el uniforme era apretado para ejercicios complejos.</p>
 
             <p>Al ver que la luz comenzaba a calentar el ambiente, y una fina capa de rocío se formaba en las lonas, replanteó sus metas.</p>
@@ -353,7 +365,7 @@
 
                 <a href="index.html">INICIO</a>
 
-                <a href="cdf4.html">CAPíTULO SIGUIENTE</a>
+                <a href="cdf4.html">CAPÍTULO SIGUIENTE</a>
 
             </nav>
 

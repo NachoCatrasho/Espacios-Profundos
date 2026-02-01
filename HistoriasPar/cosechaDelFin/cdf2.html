@@ -33,7 +33,19 @@
             border-radius: 5px;
 
         }
-        
+
+        #ficha{
+
+            display: none;
+
+        }
+
+        #ficha .activa{
+
+            display:block
+
+        }
+
     </style>
 
     <title>COSECHA DEL FIN</title>
@@ -51,12 +63,12 @@
 
         <section class="text">
 
-            <p>«En otras noticias; Se cumplen seis días desde los primeros reportes de la llamada "ventana flotante", el misterioso hallazgo que identifica a ciertas personas como "jugadores" y el denominado "conflicto de cuentas" que mantiene a varios sectores atentos. Las autoridades sugieren que podría tratarse de una broma viral. ¿Usted que opina?. <br>
+            <p>«En otras noticias; Se cumplen seis días desde los primeros reportes de la llamada "ventana flotante", el misterioso hallazgo que identifica a ciertas personas como "jugadores" y el denominado "conflicto de cuentas" que mantiene a varios sectores atentos. Las autoridades sugieren que podría tratarse de una broma viral. ¿Usted qué opina?. <br>
             Continuamos con el reporte: se han reportado sismos en...»</p>
 
         <p>Lucas estaba en su salón de ética, no prestaba atención a lo que su maestro estaba leyendo. Su mirada estaba en el libro, dos páginas adelante de su profesor.</p>
 
-        <p>El chirrido de un pupitre arrastrándose interrumpió la clase llamó la atención de todos los presentes.</p>
+        <p>El chirrido de un pupitre arrastrándose interrumpió la clase y llamó la atención de todos los presentes.</p>
         <p>Era Roberto que se había sobresaltado. Movía las manos como si estuviera utilizando su teléfono</p>
 
 
@@ -157,7 +169,7 @@
             <p>Ignoró el inconveniente y se dirigió a la estantería con macetas, donde un haz de luz natural iluminaba con fuerza. Ahí se encontró con una semilla de girasol-</p>
             <p>Lucía como una semilla común y corriente, la tomó junto con la maceta más pequeña que encontró, la cual era más grande de lo esperado para plantas pequeñas. Aunque la maceta era de barro, no le tomó mucho esfuerzo poder moverla.</p>
 
-            <p>Antes de continuar con su trabajo sacó su teléfono del bolsillo y reprodujo su de "Eternal Eclipse".</p>
+            <p>Antes de continuar con su trabajo sacó su teléfono del bolsillo y reprodujo su lista de "Eternal Eclipse".</p>
             <p>El sonido del violin acompañado por los diversos instrumentos inundó el vivero con una melodía relajante.</p>
 
             <p>Después de llenar la maceta con tierra y fertilizante una ventana apareció frente a él nuevamente.</p>
@@ -175,13 +187,13 @@
 
             <p>Se quedó mirando el recuadro un momento antes de mirar la semilla en su mano. Sabía lo que debía hacer, las historias que leía tenían algo en común sobre el "mana".</p>
             <p>Por lo regular el protagonista debía concentrarse y manipular el mana a su voluntad, pero no sabía como debería de hacerlo.</p>
-            <p>Optó por la solución más sencilla y abrió su <button class="despliegue" onclick="toggleWin()">ficha de jugador</button> en busca de posibles respuestas.</p> <!-- añadir interactividad (toggle) al botón -->
+            <p>Optó por la solución más sencilla y abrió su <button class="btnFicha" id="despliegue" onclick="toggleWin()">ficha de jugador</button> en busca de posibles respuestas.</p>
 
         </section>
 
         <div class="ventana lucas" id="ficha">
 
-            <h3>FICHA DE JUGADOR</h3>
+            <h3>FICHA DE PERSONAJE</h3>
 
             <div class="datos">
 

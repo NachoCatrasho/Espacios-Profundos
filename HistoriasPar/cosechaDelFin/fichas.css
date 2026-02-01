@@ -1,4 +1,18 @@
-/* ======= ventana de Lucas ======= */
+/* ========== Fichas por defecto ==========*/
+
+#ficha{
+
+    display: none;
+
+}
+
+#ficha .activa{
+
+    display:block
+
+}
+
+/* ========== ventana de Lucas ========== */
 
 .lucas{
 

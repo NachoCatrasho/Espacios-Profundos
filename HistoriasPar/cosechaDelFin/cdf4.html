@@ -19,6 +19,18 @@
 
         }
 
+        #ficha{
+
+            display: none;
+
+        }
+
+        #ficha .activa{
+
+            display:block
+
+        }
+
     </style>
 
 </head>
@@ -41,7 +53,7 @@
 
             <p>Había pasado toda la noche mutando semillas.</p>
             <p>Gracias a los girasoles, tenía mana suficiente para mutar varias semillas; una tras otra.</p>
-            <p>Entre más girasoles conseguía, más mana adquiría. El sistema todavía no hacía avanzar el tutorial.</p>
+            <p>Entre más girasoles conseguía, más mana adquiría. El sistema aún no hacía avanzar el tutorial.</p>
 
             <p>—Otro día más en este tutorial defectuoso. —, murmuró mientras veía fijamente una maceta vacía.</p>
             <p>La baja probabilidad de germinado que daba <strong>[Mano de jardinero]</strong> le había hecho perder 40 semillas.</p>
@@ -63,7 +75,7 @@
 
         <section class="text">
 
-            <p>—Buen... Creo que quejarse a veces funciona. — dijo con una sonrisa a mitad de camino.</p>
+            <p>—Bueno... Creo que quejarse a veces funciona —dijo con una sonrisa a mitad de camino.</p>
 
             <p>Con su calma habitual se dirigió al anaquel en busca de la semilla. Preparó todo para mutarla sin importarle el coste.</p>
             <p>Tan solo le costó cinco puntos de MP para mutar el guisante.</p>
@@ -78,7 +90,7 @@
 
             <p>—Demasiado caro —, murmuró mientras volvía su mirada a la maceta cubierta de pequeñas enredaderas.</p>
 
-            <p>Revisó su <button onclick="">ficha</button> mientras decidía que hacer con el tiempo restante.</p> <!-- añadir funcion para mostrar y ocultar la ventana-->
+            <p>Revisó su <button class="btnFicha" id="despliegue" onclick="toggleWin()">ficha</button> mientras decidía qué hacer con el tiempo restante.</p>
 
             <p>Se dispuso a recuperar la noche de sueño mientras recuperaba el mana.</p>
 
@@ -296,7 +308,7 @@
 
                 <a href="index.html">INICIO</a>
 
-                <a href="almaque.html">ALMANAQUE</a>
+                <a href="almanaque.html">ALMANAQUE</a>
 
                 <a href="cdf5.html">CAPÍTULO SIGUIENTE</a>
 

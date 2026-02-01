@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* reinicio y base de estilos*/
 
@@ -14,7 +15,7 @@ body{
 
     margin: 0;
     padding: 2em;
-    font-family: monospace, 'Consolas', 'Courier New';
+    font-family: "Roboto", sans-serif, 'Consolas', 'Courier New', monospace;
     background-color: #b1bdca;
     color: #185868;
     line-height: 1.6;
@@ -64,7 +65,7 @@ h3{
     border-bottom: 2px solid #00ffff;
     padding-bottom: 5px;
     margin-bottom: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
 }
 
