@@ -12,9 +12,19 @@ const elementosVentana = document.querySelectorAll('.ventana, .advertencia, .ven
 // Ejemplo para app.js
 
 
-function toggleWin() {
-    const el = document.getElementById('ficha');
+//function toggleWin() {
+//    const el = document.getElementById('ficha');
+//    if (el) {
+//        el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
+//    }
+//}
+
+
+
+function toggleWin(id) {
+    const el = document.getElementById(id);
     if (el) {
+        // Esto cambia entre 'block' y 'none' dinámicamente
         el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
     }
 }

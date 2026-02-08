@@ -22,8 +22,8 @@
         }
 
         .almanaque {
-            background: linear-gradient(145deg, #546d37), #5f0f44;
-            color: #36352d;
+            background: linear-gradient(145deg, #546d37, #5f0f44);
+            color: #918b5e;
             border: 4px double #5d4037;
             border-radius: 8px;
             padding: 15px;
@@ -43,7 +43,7 @@
 
         #ficha.activa{
 
-            display:block
+            display:block;
 
         }
 
@@ -58,7 +58,7 @@
         <header>
 
             <h1>COSECHA DEL FIN</h1>
-            <h2>CAPÍTULO 3</h2>
+            <h2>CAPÍTULO 3: El descubrimiento de la magia</h2>
 
         </header>
 
@@ -68,11 +68,11 @@
 
             <p>La alarma de las cinco había comenzado a sonar despertando a Lucas. Como acostumbraba, dejó que la alarma continuara hasta finalizar la canción mientras comenzaba sus estiramientos matutinos. Desabotonó las mangas y el cuello de su camisa para una mayor movilidad dejando al aire unas marcas sobre su piel.</p>
 
-            <p>Se sentía sucio por el trabajo del día anterior, pero no había forma de asearse más allá del agua para regar las plantas. Colocó "Bang Bang" de K'NAAN para continuar con la mutación de la semilla al ver en su <button class="btnFicha" id="despliegue" onclick="toggleWin()">ficha</button> que el mana se había recuperado.</p>
+            <p>Se sentía sucio por el trabajo del día anterior, pero no había forma de asearse más allá del agua para regar las plantas. Colocó "Bang Bang" de K'NAAN para continuar con la mutación de la semilla al ver en su <button class="btnFicha" id="despliegue" onclick="toggleWin('ficha-lucas3')" aria-label="abrir ficha">»Ficha«</button> que el mana se había recuperado.</p>
 
         </section>
 
-        <div class="ventana lucas" id="ficha">
+        <div class="ventana lucas" id="ficha-lucas3">
 
             <h3>FICHA DE JUGADOR</h3>
 
@@ -111,7 +111,7 @@
 
                                 <details>
 
-                                    <summary> <strong>Maestría</strong>:</summary>
+                                    <summary> <strong>Maestría</strong></summary>
 
                                     <p>Puedes aprender y enseñar con facilidad.</p>
 
@@ -122,7 +122,7 @@
 
                                 <details>
 
-                                    <summary> <strong>Cocina</strong>:</summary>
+                                    <summary> <strong>Cocina</strong> lv6</summary>
 
                                     <p>Tus platillos son más deliciosos y mejoras la calidad de los ingredientes después de procesarlos.</p>
 
@@ -133,7 +133,7 @@
 
                                 <details>
 
-                                    <summary> <strong>Agilidad</strong>:</summary>
+                                    <summary> <strong>Agilidad</strong></summary>
 
                                     <p>Añade cierto porcentaje a tus estadísticas de agilidad y destreza.</p>
 
@@ -184,7 +184,7 @@
 
                                     <summary> <strong>Modo automático</strong> (principiante)</summary>
 
-                                    <p>si te concentras lo suficiente, puedes realizar tareas automáticamente.</p>
+                                    <p>Si te concentras lo suficiente, puedes realizar tareas automáticamente.</p>
 
                             </details>
 
@@ -290,19 +290,19 @@
 
         <article class="ventana almanaque" aria-labelledby="almanaque-titulo">
 
-            <header class="almanaque header">
+            <section class="almanaque header">
 
                 <h3 id="almanaque-titulo">»ALMANAQUE«</h3>
 
-            </header>
+            </section>
         
             <section class="almanaque-entrada">
         
-                <header class="entrada-header">
+                <section class="entrada-header">
                     
                     <h4 class="planta">Girasol <span class="rareza comun">[Común]</span></h4>
 
-                </header>
+            </section>
         
                 <div class="entrada descripcion">
 
@@ -311,11 +311,11 @@
 
                 </div>
 
-                <header class="almanaque header">
+                <section class="almanaque header">
 
                     <h4 class="planta"> Girasol <span class="rareza mutado">[Mutado]</span></h4>
 
-                </header>
+            </section>
 
                 <div>
 

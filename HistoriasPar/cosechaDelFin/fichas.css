@@ -14,7 +14,7 @@
 
 /* ========== ventana de Lucas ========== */
 
-.lucas{
+.lucas, .lucas p{
 
     background: linear-gradient(145deg, #a5bb8a, #58614e);
     color: #294416;
@@ -31,6 +31,12 @@
     font-size: 1.8rem;
 
 }
+/*
+.lucas p{
+
+    font-family: "Shadows Into Light", cursive;
+
+}*/
 
 
 /* ====== CHARACTER SHEET COMPONENTS ===== */
@@ -67,7 +73,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.123);
     border-radius: 5px;
     margin: 15px 0;
 
@@ -93,13 +99,5 @@
     border-top: 1px dashed rgba(255, 255, 255, 0.3)
 
 }
-
-.primarias h3{
-
-    margin-bottom: 15px;
-    color: #00ffff;
-
-}
-
 /* ========== animaciones =========== */
 

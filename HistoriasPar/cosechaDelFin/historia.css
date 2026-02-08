@@ -16,8 +16,7 @@ body{
     margin: 0;
     padding: 2em;
     font-family: "Roboto", sans-serif, 'Consolas', 'Courier New', monospace;
-    background-color: #b1bdca;
-    color: #185868;
+    color: #174b58;
     line-height: 1.6;
     min-height: 100vh;
 
@@ -162,6 +161,24 @@ button{
 
 }
 
+.btnFicha{
+
+    /*border-bottom: 1px solid rgba(30, 11, 139, 0.774)*/
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.5s;
+
+}
+
+.btnFicha:hover{
+
+    background: #7f88db9d;
+    border-radius: 3px;
+    transform: scale(1.02);
+
+}
+
 /* ========== pruebas de css para los enlaces ==========*/
 
 a {
@@ -169,14 +186,19 @@ a {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    margin: 10px 0;
-    padding: auto;
+    margin: 20px 0;
+    padding: 10px 35px;
     transition: 0.5s;
-    
+    color: #07a4e2f8;
+    background-color: #033538;
+    border: 2px double #00ccff;
+    border-radius: 15px;
+    box-shadow: 0, 2px, 5px #000000;
+
 }
 
 a:hover {
-    color: #033538;
+    color: #0c6285f8;
     text-shadow: 0 0 8px rgba(12, 1, 71, 0.6);
     transform: scale(1.2);
 }
