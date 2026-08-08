@@ -1,94 +1,110 @@
-body{
-    margin: 0;
-    padding:0;
-    height:100%;
-    background: radial-gradient(circle at center, #0f9b3e 0%, #009933 80%);
-    position: relative;
-    overflow-x:hidden;
+body {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ background: radial-gradient(circle at center, #0f9b3e 0%, #009933 80%);
+ position: relative;
+ overflow-x: hidden;
 }
 
-h1{
-    font-size: 5em;
-    text-shadow: 5px 5px 10px rgba(7, 7, 34, 0.4);
-    color:rgba(21, 6, 63, 0.533);
-    text-align:center;
+h1 {
+ font-size: 5em;
+ text-shadow: 5px 5px 10px rgba(7, 7, 34, 0.4);
+ color: rgba(21, 6, 63, 0.533);
+ text-align: center;
 }
 
-.cear{
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: -20px;
+.cear {
+ text-align: center;
+ font-size: 1.5em;
+ margin-top: -20px;
 }
 
-a{
-  color:#888;
-    /* text-decoration: none; */
+a {
+ color: #888;
+ /* text-decoration: none; */
 }
 
 /* Enlaces */
-a:link{
-  color:#000
+a:link {
+ color: #000;
 }
 
-a:visited{
-  color:#555
+a:visited {
+ color: #525;
 }
 
 /* efecto de movimiento */
-.glow{
-  position:fixed;
-  top:0; left:0;
-  background: radial-gradient(circle, rgba(105, 60, 60, 0.1) 0%, transparent 50%);
-  width:100vw;
-  height: 100vh;
-  z-index: -1;
+.glow {
+ position: fixed;
+ top: 0;
+ left: 0;
+ background: radial-gradient(
+  circle,
+  rgba(105, 60, 60, 0.1) 0%,
+  transparent 50%
+ );
+ width: 100vw;
+ height: 100vh;
+ z-index: -1;
 }
 
-.star{
-  position: fixed;
-  background: #33ff22;
-  rotate: 45deg;
-  width: 0;
-  height: 0;
-  /* border-radius: 50%; */
-  opacity:5%;
-  animation: twinkle 3s infinite;
-  z-index: -1;
+.star {
+ position: fixed;
+ background: #33ff22;
+ rotate: 45deg;
+ width: 0;
+ height: 0;
+ /* border-radius: 50%; */
+ opacity: 5%;
+ animation: twinkle 3s infinite;
+ z-index: -1;
 }
 
 .carta {
-  /* display:grid; */
-  width: 0;
+ display: grid;
+ width: 0;
+ border-radius: 15px;
 
-  position: relative;
-  
+ position: relative;
 }
 
-.personaje{
-  margin: 10px;
-  padding: 0;
-  display:inline-block;
+.personaje {
+ margin: 15px;
+ padding: 10px;
+ display: inline-block;
 
-  background-color: #0055;
-  margin-left:auto;
+ background-color: #0055;
+ margin: auto;
 }
 
-/* .ficha-carlos{
-  background: radial-gradient(circle at center, #000000, #1a1a1a 80%);
-  color: gray;
-  position:absolute;
-  overflow: hidden;
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 0 15px #222;
-} */
-
-h2{
-  color: #1a1a1a;
+.ficha-carlos {
+ margin: 50px;
+ background: radial-gradient(circle at center, #000000, #1a1a1a 80%);
+ color: gray;
+ position: absolute;
+ overflow: hidden;
+ border-radius: 16px;
+ padding: 1.5rem;
+ box-shadow: 0 0 15px #222;
 }
 
+h2 {
+ color: #1a1a1a;
+}
 
-@keyframes twinkle{
-  0%, 100%{ opacity: 0.1; transform: scale(0.8)}
-  50% {opacity:1; transform: scale(1.5);}
+@keyframes twinkle {
+ 0%,
+ 100% {
+  opacity: 0.1;
+  transform: scale(0.8);
+ }
+ 70% {
+  opacity: 0.3;
+  transform: scale(1.15);
+ }
+ 50% {
+  opacity: 1;
+  transform: scale(1.5);
+ }
 }
