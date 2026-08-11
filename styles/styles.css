@@ -1,10 +1,11 @@
 body {
  margin: 0;
  padding: 0;
- height: 100%;
+
  background: radial-gradient(circle at center, #0f9b3e 0%, #009933 80%);
- position: relative;
- overflow-x: hidden;
+/* position: relative;
+  height: 100%;
+ overflow-x: hidden;*/
 }
 
 h1 {
@@ -62,20 +63,17 @@ a:visited {
 }
 
 .carta {
- display: grid;
- width: 0;
- border-radius: 15px;
+ display: flex;
+ width: 0;|
 
- position: relative;
+ position: absolute;
 }
 
 .personaje {
- margin: 15px;
+ margin-right: 15px;
+ margin-left:15px;
  padding: 10px;
- display: inline-block;
-
- background-color: #0055;
- margin: auto;
+ border-radius: 15px;
 }
 
 .ficha-carlos {
